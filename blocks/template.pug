@@ -1,0 +1,18 @@
+include head/head
+include header/header
+include main/main
+include footer/footer
+doctype
+html(lang="en")
+    block head
+    head
+        +head({
+            title: "Pug_PROJ"
+        })
+    body
+        block header
+            +header
+        block main
+            +main
+        block footer
+            +footer
