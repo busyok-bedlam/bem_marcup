@@ -1,0 +1,27 @@
+mixin price-item(item)
+    ul.price_item
+        li.price_cell.header start
+        li.price_cell
+            if item.btn1
+                i.fas.fa-check
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+            else
+                i.fas.fa-times
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+        li.price_cell
+            if item.btn2
+                i.fas.fa-check
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+            else
+                i.fas.fa-times
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+        li.price_cell
+            if item.btn3
+                i.fas.fa-check
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+            else
+                i.fas.fa-times
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nam?
+        li.price_cell.price_val= item.price
+        li.price_cell
+            a(href="#") choose

@@ -1,0 +1,30 @@
+.subs
+    background: #51b736
+    padding: 40px 0
+    display: flex
+    .subscr_form
+        display: flex
+        align-items: center
+        width: calc((845/1200)*100%)
+        >input
+            border:
+                style: none
+            padding: 14px 0
+            transition: all .7s ease
+            &[type="text"]
+                color: #fff
+                background: #87c677
+                width: calc((645/845)*100%)
+                text-indent: 20px
+            &:focus
+                background: #747470
+            &[type="submit"]
+                padding: 14px 42px
+                &:hover
+                    background: #ccc
+    .subscr_title
+        color: #fff
+        font-size: 3.6em
+        width: calc((355/1200)*100%)
+        text-transform: capitalize
+        text-align: center

@@ -1,0 +1,11 @@
+include _logo/_logo
+include _link_gr/_link_gr
+mixin header
+    header.page_header
+        nav.main_nav
+            block link_group1
+                +link_gr("about","services","tours")
+            block logo
+                +logo
+            block link_group2
+                +link_gr("portfolio","contact","search")
