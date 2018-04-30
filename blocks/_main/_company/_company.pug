@@ -1,12 +1,16 @@
 mixin company
     block company_content
-        section.company-content
-            h1 company information
-            p.company_title Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sapiente amet libero nesciunt error illum provident possimus numquam corrupti quas mollitia, qui suscipit aspernatur laborum vel odio dolorem, facere optio. Deleniti magni eveniet dolores voluptatem pariatur sed numquam est voluptate?
-            .company_icons
-                a(href="#")
-                    i.fab.fa-apple
-                a(href="#")
-                    i.fab.fa-android
-                a(href="#")
-                    i.fab.fa-windows
+        section.company-info
+            .company-content
+                h1.company-title COMPANY INFORMATION
+                p.company-txt Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a quo aliquid commodi qui expedita assumenda modi non cupiditate obcaecati.
+                .company-icons
+                    a(href="#").apple.icons-item
+                        i.fab.fa-apple
+                    a(href="#").android.icons-item
+                        i.fab.fa-android
+                    a(href="#").windows.icons-item
+                        i.fab.fa-windows
+            .company-label
+                figure.company-pht
+                    img(src="/img/logo.png", alt="logo")

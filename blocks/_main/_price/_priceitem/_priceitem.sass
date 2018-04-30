@@ -1,37 +1,37 @@
-ul.price-item
+.price-item
     .price-cell
         display: flex
         flex-direction: column
         align-items: center
         padding: 15px 0
         font-size: 1.2em
-        @include trans(.8s)
+        transition: all .8s ease
         &.header
-                background: #A27E7E
-                color: #fff
-                text-transform: uppercase
-                font-size: 1.2em
-                font-weight: bold
-                &:hover
-                    background: #3493C9
+            background: #A27E7E
+            color: #fff
+            text-transform: uppercase
+            font-size: 1.2em
+            font-weight: bold
+            &:hover
+                background: #3493C9
         &.price-val
                 font-size: 4em
         &:not(.header)
-                &:hover
-                    background: #93BC0F
-                    color: #fff
-                    >a
-                        color: #fff
-        &:last-child
+            &:hover
+                background: #93BC0F
+                color: #fff
                 >a
-                    font-size: 1.2em
-                    color: #7B7B7B
-                    text-transform: uppercase
-                    font-weight: 700
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    width: 100%
-                    height: 100%                               
+                    color: #fff
+        &:last-child
+            >a
+                font-size: 1.2em
+                color: #7B7B7B
+                text-transform: uppercase
+                font-weight: 700
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 100%                               
         >p
-                width: 75%
+            width: 75%

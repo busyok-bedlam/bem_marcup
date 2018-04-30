@@ -5,14 +5,16 @@ include _footer/_footer
 doctype
 html(lang="en")
     block head
-    head
-        +head({
-            title: "Pug_PROJ"
-        })
+        head
+            +head({
+                title: "Pug_PROJ"
+            })
     body
-        block header
-            +header
-        block main
-            +main
-        block footer
-            +footer
+        block wrapper
+            .wrapper    
+                block header
+                    +header
+                block main
+                    +main
+                block footer
+                    +footer
