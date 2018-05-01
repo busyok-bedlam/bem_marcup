@@ -1,4 +1,7 @@
 .information
+    imag
+        width: 100%
+        height: auto
     .info-head
         background: #59BA39
         color: #fff
@@ -13,30 +16,35 @@
             font-size: 1.8em
             width: 40%
     .info-main
-        width: calc((1000/1200)*100%)
+        // width: calc((1000/1200)*100%)
         margin: 0 auto
         display: flex
         flex-wrap: wrap
         justify-content: space-between
         align-items: space-between
+        border: 3px  solid red
         .info-content-item
             width: 50%
             display: flex
             justify-content: center
             align-items: center
             &:nth-child(1)
-                    padding: 30px 0
+                padding: 30px 0
             .info-txt
                 width: calc((400/600)*100%)
                 >h2
                     font-size: 3.8em
                     text-transform: capitalize
-                >.proj-content
+                .proj-content
                     font-size: 1.2em
                     margin: 20px 0
-                >.proj-link
+                .proj-link
                     color: #51b736
                     font-weight: 700
                     text-transform: uppercase
                     &:hover
                         text-shadow: 0 0 10px green
+            .cont-phot
+                // box-shadow: 0 0 10px #000
+                width: 100% 
+            

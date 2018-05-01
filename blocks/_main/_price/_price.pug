@@ -1,28 +1,28 @@
 include _priceitem/_priceitem
 mixin price
     section.price
-        h1.price_title price
-        ul.price_list
-            li
+        h1.price-title price
+        ul.price-list
+            li.price-list-elem
                 +price-item({
-                    price: 100
+                    price: "100$"
                 })
-            li
+            li.price-list-elem
                 +price-item({
                     btn1: true,
-                    price: 200
+                    price: "200$"
                 })
-            li
+            li.price-list-elem
                 +price-item({
                     btn1: true,
                     btn2: true,
-                    price: 300
+                    price: "300$"
                 })
-            li
+            li.price-list-elem
                 +price-item({
                     btn1: true,
                     btn2: true,
                     btn3: true,
-                    price: 400
+                    price: "400$"
                 })
 

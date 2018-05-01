@@ -215,7 +215,7 @@ header {
     text-transform: capitalize;
     text-align: center; }
 
-.price_list {
+.price-list {
   width: calc((1000/1200)*100%);
   margin: 0 auto;
   display: -webkit-box;
@@ -224,9 +224,10 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .price_list > li {
-    border: 1px solid #000;
-    width: calc((235/1000)*100%); }
+
+.price-list-elem {
+  border: 1px solid #000;
+  width: calc((235/1000)*100%); }
 
 .price-item .price-cell {
   display: -webkit-box;
@@ -336,6 +337,10 @@ header {
   .company-label > figure {
     width: 60%; }
 
+.information imag {
+  width: 100%;
+  height: auto; }
+
 .information .info-head {
   background: #59BA39;
   color: #fff;
@@ -360,7 +365,6 @@ header {
     width: 40%; }
 
 .information .info-main {
-  width: calc((1000/1200)*100%);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,7 +376,8 @@ header {
   justify-content: space-between;
   -webkit-box-align: space-between;
   -ms-flex-align: space-between;
-  align-items: space-between; }
+  align-items: space-between;
+  border: 3px  solid red; }
   .information .info-main .info-content-item {
     width: 50%;
     display: -webkit-box;
@@ -391,12 +396,17 @@ header {
       .information .info-main .info-content-item .info-txt > h2 {
         font-size: 3.8em;
         text-transform: capitalize; }
-      .information .info-main .info-content-item .info-txt > .proj-content {
+      .information .info-main .info-content-item .info-txt .proj-content {
         font-size: 1.2em;
         margin: 20px 0; }
-      .information .info-main .info-content-item .info-txt > .proj-link {
+      .information .info-main .info-content-item .info-txt .proj-link {
         color: #51b736;
         font-weight: 700;
         text-transform: uppercase; }
-        .information .info-main .info-content-item .info-txt > .proj-link:hover {
+        .information .info-main .info-content-item .info-txt .proj-link:hover {
           text-shadow: 0 0 10px green; }
+    .information .info-main .info-content-item .cont-phot {
+      width: 100%; }
+
+.main-content > section {
+  border: 3px solid red; }
