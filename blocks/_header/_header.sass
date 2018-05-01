@@ -4,9 +4,22 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    @media screen and (max-width: 1050px)
+        flex-direction: column
+        background: red
+    .link-gr
+        @media screen and (max-width: 1050px)
+            background: blue
+            width: 100%
+            display: flex
+        .link-gr-item
+            @media screen and (max-width: 1050px)
+                width: calc(100%/3)
     a
         color: #fff
-        display: inline-block
+        display: inline-flex
+        justify-content: center
+        align-items: center
         height: 100%
         padding: 50px
         text-transform: uppercase

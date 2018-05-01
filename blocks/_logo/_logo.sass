@@ -20,6 +20,8 @@
     transform: rotate(135deg)
     @include trans(1s)
     animation: rotating 6s linear infinite
+    @media (max-width: 1050px)
+        display: none
     &::after
         position: absolute
         content: ""

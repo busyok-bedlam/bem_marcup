@@ -34,9 +34,34 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 1050px) {
+    .main_nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background: red; } }
+  @media screen and (max-width: 1050px) {
+    .main_nav .link-gr {
+      background: blue;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media screen and (max-width: 1050px) {
+    .main_nav .link-gr .link-gr-item {
+      width: calc(100%/3); } }
   .main_nav a {
     color: #fff;
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100%;
     padding: 50px;
     text-transform: uppercase;
@@ -90,6 +115,9 @@ header {
   transition: all 1s ease;
   -webkit-animation: rotating 6s linear infinite;
   animation: rotating 6s linear infinite; }
+  @media (max-width: 1050px) {
+    .logo {
+      display: none; } }
   .logo::after {
     position: absolute;
     content: "";
@@ -410,3 +438,26 @@ header {
 
 .main-content > section {
   border: 3px solid red; }
+
+.footer-block {
+  background-color: #757575; }
+  .footer-block .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer-block .footer-nav .foot-nav-elem {
+      color: #fff; }
+      .footer-block .footer-nav .foot-nav-elem:not(.logo) {
+        display: inline-block;
+        padding: 50px;
+        font-size: 1.2em; }
+      .footer-block .footer-nav .foot-nav-elem:hover:not(.logo) {
+        background: #000;
+        color: #fff; }
